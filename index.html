@@ -6,7 +6,22 @@
   <title>On the Dot — Everyday apps that keep life on track</title>
   <meta name="description" content="On the Dot builds everyday web apps that keep life on track — on the dot. Our first app, a Household Finance Tracker, is coming soon.">
   <meta name="theme-color" content="#0F766E">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='%23FF6B57'/%3E%3C/svg%3E">
+  <link rel="canonical" href="https://onthedotapp.github.io/onthedot-website/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="On the Dot">
+  <meta property="og:title" content="On the Dot — Everyday apps that keep life on track">
+  <meta property="og:description" content="On the Dot builds everyday web apps that keep life on track — on the dot. Our first app, a Household Finance Tracker, is coming soon.">
+  <meta property="og:url" content="https://onthedotapp.github.io/onthedot-website/">
+  <meta property="og:image" content="https://onthedotapp.github.io/onthedot-website/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="On the Dot: keep life on track, on the dot.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="On the Dot — Everyday apps that keep life on track">
+  <meta name="twitter:description" content="On the Dot builds everyday web apps that keep life on track — on the dot. Our first app, a Household Finance Tracker, is coming soon.">
+  <meta name="twitter:image" content="https://onthedotapp.github.io/onthedot-website/assets/images/og-image.png">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='%23FF6B57'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -103,7 +118,20 @@
               <li>Moving money between your own accounts never gets counted as spending</li>
               <li>A clear month-end verdict: how did we do?</li>
             </ul>
-            <a class="btn btn-primary" href="projects/">Follow the build</a>
+            <form class="otd-form inline-form" data-otd-form data-fallback="waitlist-fallback-home" data-success="You're on the list. We'll email you when our first app is ready." hidden>
+              <input type="hidden" name="topic" value="Early news">
+              <input type="hidden" name="source" value="Home page">
+              <div class="field">
+                <label for="waitlist-email-home">Be first to try our first app</label>
+                <input id="waitlist-email-home" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              </div>
+              <button class="btn btn-primary" type="submit">Notify me</button>
+              <label class="hp" aria-hidden="true">Leave this empty <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label>
+              <p class="form-status" role="status" aria-live="polite"></p>
+              <p class="form-privacy">Just your email, used only to tell you when it's ready. We never sell or share it.</p>
+            </form>
+            <p class="form-fallback" id="waitlist-fallback-home">Want to hear when our first app is ready? Email <a href="mailto:ItsFridaySantos@gmail.com?subject=Early%20news">ItsFridaySantos@gmail.com</a> and we'll let you know.</p>
+            <a class="btn btn-ghost" href="projects/#build-notes">Follow the build</a>
           </div>
           <div class="feature-side" aria-hidden="true">
             <div class="ledger">
@@ -134,6 +162,7 @@
     <div class="wrap">
       <div><strong>On the Dot</strong> · Everyday apps that keep life on track — on the dot.<br>© 2026 On the Dot</div>
       <ul class="footer-links">
+        <li><a href="./" aria-current="page">Home</a></li>
         <li><a href="projects/">Projects</a></li>
         <li><a href="about/">About</a></li>
         <li><a href="staff/">Staff</a></li>
@@ -141,5 +170,6 @@
       </ul>
     </div>
   </footer>
+  <script src="assets/js/forms.js" defer></script>
 </body>
 </html>
