@@ -260,26 +260,11 @@ a { color: var(--teal-deep); }
   box-shadow: none;
 }
 
-/* ---------- Placeholder copy markers (remove when final copy lands) ---------- */
-.placeholder-banner {
-  display: flex; gap: 12px; align-items: flex-start;
-  background: #FFF4F1;
-  border: 2px dashed var(--coral);
-  border-radius: var(--radius-sm);
-  padding: 14px 16px;
-  margin-top: 22px;
-  font-size: 0.95rem;
-}
-.placeholder-banner strong { color: #C23B28; }
-.placeholder-tag {
-  display: inline-block; margin-bottom: 10px;
-  padding: 3px 10px; border-radius: 999px;
-  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
-  background: var(--coral); color: #fff;
-}
-.is-placeholder { border: 2px dashed #FFB7AB; }
 
-/* About: story + values */
+/* About: story + who we are */
+.grid-2 .card h3 { margin-bottom: 2px; }
+.grid-2 .role { display: block; }
+.empty-chair { margin: 18px 4px 0; color: var(--ink-soft); }
 .card .section-head { margin-bottom: 12px; }
 .story { max-width: 70ch; }
 .story p { margin: 0 0 14px; color: var(--ink-soft); }
@@ -424,6 +409,7 @@ a { color: var(--teal-deep); }
   .nav { width: auto; }
   .site-header .wrap { flex-wrap: nowrap; }
   .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
   .feature { display: grid; grid-template-columns: 1.3fr 1fr; }
   .feature-side { border-top: 0; border-left: 1px solid var(--line); display: flex; align-items: center; }
   .feature-side .ledger { width: 100%; }
