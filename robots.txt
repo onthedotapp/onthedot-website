@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://onthedotapp.github.io/onthedot-website/sitemap.xml
+Sitemap: https://onthedotapp.ca/sitemap.xml
